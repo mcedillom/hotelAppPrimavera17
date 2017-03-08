@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HotelApp</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.inline-png-1.4.5.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+   <div id="registro" data-role="page">
+   		<div data-role="header">
+   			<h1>Registro</h1>
+   		</div>
+   		<div class="ui-contente">
+   			<ul data-role="listview">
+              	<li>
+              		<input id="nombre" type="text" placeholder="Nombre">
+              	</li>
+
+              	<li>
+              		<input id="email" type="email" placeholder="Email">
+              	</li>
+              	<li>
+              		<input id="password" type="password" placeholder="Contraseña">
+              	</li>
+              	<li>
+              		<input id="telefono" type="tel" placeholder="Teléfono">
+              	</li>
+                <li>
+                    <a href="#">Tomar Foto </a>
+                </li>
+                <li id="fotoTomada">
+
+                </li>
+   			</ul>
+   		</div>
+   		<div data-role="footer" data-position="fixed">
+   			<div data-role="navbar">
+   				<ul>
+   					<li>
+   						<a href="#" id="registrar" class="ui-btn-active">Registrar</a>
+   					</li>
+   					<li>
+   						<a href="#inicioSesion">Iniciar Sesion</a>
+   					</li>	
+   				</ul>
+   			</div>
+   		</div>
+   </div>
+   
+   <div id="inicioSesion" data-role="page">
+   	   <div data-role="header">
+
+   	   </div>
+   	   <div class="ui-content">
+   	   		<ul data-role="listview">
+   	   			<li data-role="list-divider">
+   	   				Correo Usuario
+   	   			</li>
+   	   			<li>
+   	   				<input id="emailSesion" type="email" placeholder="email">
+   	   			</li>
+   	   			<li data-role="list-divider">
+   	   				Contraseña
+   	   			</li>
+   	   			<li>
+   	   				<input id="passwordSesion" type="password" placeholder="Conraseña">
+   	   			</li>
+   	   		</ul>
+   	   </div>
+   	   <div data-role="footer" data-position="fixed">
+   	   		<div data-role="navbar">
+   	   			<ul>
+   	   				<li>
+   	   					<a id="botonIniciarSesion" href="#" class="ui-btn-active">Iniciar Sesión</a>
+   	   				</li>
+   	   			</ul>
+   	   		</div>
+   	   </div>
+   </div>
+
+
+
+
+
+   <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+   <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+   <script type="text/javascript" src="js/actions.js"></script>
+</body>
+</html>
