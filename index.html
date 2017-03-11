@@ -14,46 +14,46 @@
    		<div data-role="header">
    			<h1>Registro</h1>
    		</div>
-   		<div class="ui-contente">
+   		<div class="ui-content">
    			<ul data-role="listview">
               	<li>
-              		<input id="nombre" type="text" placeholder="Nombre">
+              		<input id="nombreRegistro" type="text" placeholder="Nombre">
               	</li>
 
               	<li>
-              		<input id="email" type="email" placeholder="Email">
+              		<input id="emailRegistro" type="email" placeholder="Email">
               	</li>
               	<li>
-              		<input id="password" type="password" placeholder="Contraseña">
-              	</li>
-              	<li>
-              		<input id="telefono" type="tel" placeholder="Teléfono">
-              	</li>
-                <li>
-                    <a href="#">Tomar Foto </a>
-                </li>
-                <li id="fotoTomada">
-
-                </li>
-   			</ul>
-   		</div>
    		<div data-role="footer" data-position="fixed">
    			<div data-role="navbar">
    				<ul>
    					<li>
-   						<a href="#" id="registrar" class="ui-btn-active">Registrar</a>
+   						<a href="#" id="botonRegistrar" class="ui-btn-active">Registrar</a>
    					</li>
    					<li>
    						<a href="#inicioSesion">Iniciar Sesion</a>
    					</li>	
    				</ul>
+              		<input id="passwordRegistro" type="password" placeholder="Contraseña">
+              	</li>
+              	<li>
+              		<input id="telefonoRegistro" type="tel" placeholder="Teléfono">
+              	</li>
+                <li>
+                    <a id="botonTomarFoto" href="#">Tomar Foto </a>
+                </li>
+                <li id="fotoTomadaRegistro">
+
+                </li>
+   			</ul>
+   		</div>
    			</div>
    		</div>
    </div>
    
    <div id="inicioSesion" data-role="page">
    	   <div data-role="header">
-
+   	   		Inicio Sesion
    	   </div>
    	   <div class="ui-content">
    	   		<ul data-role="listview">
@@ -81,13 +81,62 @@
    	   		</div>
    	   </div>
    </div>
-
-
-
+   
+   <div id="home" data-role="page">
+   		<div data-role="header">
+   			<h1>HotelApp</h1>
+   			<a href="#" class="fecha">
+   				04/03/2017
+   			</a>
+   			<a href="#" id="botonCerrarSesion" data-role="button" data-icon="delete">
+   				Cerrar Sesión
+   			</a>
+   		</div>
+   		<div class="ui-content">
+   			<ul data-role="listview">
+	   			<li>
+	   				<a href="#nuevaReserva">
+	   				   Nueva Reserva
+	   				</a>
+	   			</li>
+	   			<li>
+	   				<a href="#historial">
+	   					Historial de Reservas
+	   				</a>	
+	   			</li>
+	   			<li>
+	   				<a href="#reservasPendientes">
+	   					Reservas Pendientes
+	   				</a>	
+	   			</li>
+	   			<li>
+	   				<a href="#ubicacion">
+	   					Ubicación
+	   				</a>	
+	   			</li>
+	   			<li>
+	   				<a href="#galeria">
+	   					Galeria
+	   				</a>	
+	   			</li>
+	   			<li>
+	   				<a href="#terminos">
+	   					Términos y Condiciones
+	   				</a>	
+	   			</li>
+   			</ul>
+   		</div>
+   		<div data-role="footer" data-position="fixed">
+   			<span>Todos los derechos reservados &copy;</span>
+   			<a href="#nosotros">Nosotros</a>
+   		</div>
+   </div>
 
 
    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+   <script type="text/javascript" src="js/API/mediaCapture.js"></script>
    <script type="text/javascript" src="js/actions.js"></script>
+
 </body>
 </html>

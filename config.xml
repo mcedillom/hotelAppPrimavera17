@@ -22,4 +22,7 @@
 
         <icon src="img/icono.jpg" />
         <splash src="img/splash.png" />
+
+        <gap:plugin name="org.apache.cordova.media-capture"/>
+
     </widget>
