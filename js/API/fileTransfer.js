@@ -1,6 +1,9 @@
 var file ={
 	exito: function (){
+		
+		window.localStorage.setItem ("NombreUsuario", $("#nombreRegistro").val());
 		window.location.href = "#home";
+
 	},
 
 	error: function (){
@@ -17,6 +20,6 @@ var file ={
 		options.mimeType = "image/jpg";
 
 		var ft = new FileTransfer ();
-		ft.upload(fileURL, "", file.exito, file.error, options);
+		ft.upload(fileURL, "http://www.colors.edu.mx/archivoTest.php", file.exito, file.error, options);
 	}
 }
