@@ -17,7 +17,7 @@ var file ={
 		/*opciones de envio
 		*
 		*/
-		var options      = new FileUploadOptions ();
+		var options      = new FileUploadOptions();
 		options.fileKey  = "foto";
 		options.filename = "miFoto";
 		options.mimeType = "image/jpg";
@@ -27,6 +27,6 @@ var file ={
 		};
 
 		var ft = new FileTransfer ();
-		ft.upload(fileURL, "http://www.colors.edu.mx/archivoTest.php", file.exito, file.error, options);
+		ft.upload(fileURL, encodeURI("http://www.colors.edu.mx/archivoTest.php"), file.exito, file.error, options);
 	}
 }
