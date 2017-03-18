@@ -21,7 +21,7 @@ var file ={
 		options.fileKey  = "foto";
 		options.filename = "miFoto";
 		options.mimeType = "image/jpg";
-		options.chunkedNode = false;
+		options.chunkedMode = false;
 		options.headers ={
 			Connection: "Close"
 		};
