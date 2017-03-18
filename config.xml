@@ -23,7 +23,12 @@
         <icon src="img/icono.jpg" />
         <splash src="img/splash.png" />
 
+        <gap:plugin name = "cordova-plugin-whitelist" source="npm"/>
         <gap:plugin name="org.apache.cordova.media-capture"  source ="npm"/>
-         <gap:plugin name="org.apache.cordova.file-transfer" source ="npm"/>
+        <gap:plugin name="org.apache.cordova.file-transfer" source ="npm"/>
+
+        <access origin="*"/>
+        <allow-intent href="*" />
+        <allow-navagation href="*"/>
 
     </widget>
