@@ -7,7 +7,8 @@ var file ={
 	},
 
 	error: function (error){
-		alert(error);
+		alert(error.msg);
+		alert(error.message);
 		alert ("Error al enviar foto al servidor");
 	},
 
