@@ -37,6 +37,9 @@ var fn = {
 			if(typeof nombre !== "string"){
 				throw new Error("El nombre no es válido");
 			}
+			if(nombre == ""){
+				throw new Error ("El nombre es Forzoso");
+			}
 			if(email == ""){
 				throw new Error ("El email es Forzoso");
 			}
@@ -63,6 +66,7 @@ var fn = {
 	},
 
 	enviarRegistro: function(nombreR, emailR, telR, passwordR, fotoR){
+		alert("enviadnso datos");
 		$.ajax({
 		  method: "POST",
 		  url: "http://www.colors.edu.mx/archivoTest.php",
@@ -73,7 +77,8 @@ var fn = {
 		 }
 		})
 		  .done(function( mensaje) {
-		  	if (mensajec== 1){
+		  	if (mensaje == 1){
+		  		alert("datos enviados");
 		  		/*
 		  		*transferimos la foto
 		  		*/
