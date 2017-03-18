@@ -96,7 +96,7 @@
    		<div class="ui-content">
    			<ul data-role="listview">
 	   			<li>
-	   				<a href="#nuevaReserva">
+	   				<a href="#reserva1">
 	   				   Nueva Reserva
 	   				</a>
 	   			</li>
@@ -132,6 +132,77 @@
    			<a href="#nosotros">Nosotros</a>
    		</div>
    </div>
+   <div id="reserva1" data-role="page">
+   		<div data-role="header">
+   			<h1>Reservación<h1>
+   		</div>
+   		<div class ="ui-content">
+   			<lu data-role ="listview">
+	   			<li data-role="listview">
+	   				Selecciona el tipo de habitación
+	   			</li>
+	   			<li><a href="#">Sencilla</a></li>
+	   			<li><a href="#">Doble</a></li>
+	   			<li><a href="#">Suite</a></li>
+	   		</lu>	
+   		</div>
+   		<div data-role="footer" data-position="fixed">
+   			<div data-role="navbar">
+	   			<ul>
+	   				<li><a href="#" data-rel="back">Cancelar</a></li>
+	   				<li><a href="#" class="ui-btn-active"></a></li>
+	   			</ul>
+   			</div>
+   		</div>	
+   </div>
+   <div id="reserva2" data-role="page">
+   		<div data-role="header">
+   			<h1>Reservación</h1>
+   			<a href="#" data-rel="back">Atrás</a>
+   		</div>
+   		<div class="ui-content">
+   			<ul data-role="listview">
+   				<li data-role="list-divider">
+   					Selecciona datos extras
+   				</li>
+   				<li>
+   					Número de Personas:
+   					<select>
+   						<option>1</option>
+   						<option>2</option>
+   						<option>3</option>
+   						<option>4</option>					
+   					</select>
+   				</li>
+   				<li>
+   					Número de Días:
+   					<select>
+   						<option>1</option>
+   						<option>2</option>
+   						<option>3</option>
+   						<option>4</option>
+   					</select>
+   				</li>
+   				<li>
+   					Número de Habictaciones:
+   					<select>
+   						<option>1</option>
+   						<option>2</option>
+   						<option>3</option>
+   						<option>4</option>
+   					</select>
+   				</li>
+   			</ul>
+   		</div>
+   		<div data-role="footer" data-position="fixed">
+   			<div data-role="navbar">
+   				<ul>
+   					<li><a href="#" class="ui-btn-active">Reservar</a></li>
+   				</ul>
+   			</div>
+   		</div>
+   </div>
+
 
    <script type="text/javascript" src="cordova.js"></script>
    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
