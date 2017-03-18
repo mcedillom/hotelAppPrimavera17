@@ -2,7 +2,7 @@ var mc = {
 	exito: function (mediaFiles) {
 			var path = mediaFiles[0].fullPath;
 
-			$("#fotoTomadaRegistro").html('<img src="' + path + '">');
+			$("#fotoTomadaRegistro").html('<img src="'+path+'">');
 	},
 /*fullpath es la ruta a la foto*/
 	error: function (){

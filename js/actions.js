@@ -21,7 +21,7 @@ var fn = {
 		var email    = $("#emailRegistro").val();
 		var tel      = $("#telefonoRegistro").val();
 		var password = $("#passwordRegistro").val();
-		var foto     = $("#fotoTomadaRegistro.img")[0];
+		var foto     = $("#fotoTomadaRegistro img")[0];
 /*console.log(nombre);
 *console.log(email);
 *console.log(tel);
