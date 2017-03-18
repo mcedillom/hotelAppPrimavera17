@@ -7,8 +7,8 @@ var file ={
 	},
 
 	error: function (error){
-		alert(error.msg);
-		alert(error.message);
+		alert(error.status);
+		alert(error.toString());
 		alert ("Error al enviar foto al servidor");
 	},
 
@@ -20,6 +20,10 @@ var file ={
 		options.fileKey  = "foto";
 		options.filename = "miFoto";
 		options.mimeType = "image/jpg";
+		options.chunkedNode = false;
+		options.headers ={
+			Connection: "Close"
+		};
 
 		var ft = new FileTransfer ();
 		ft.upload(fileURL, "http://www.colors.edu.mx/archivoTest.php", file.exito, file.error, options);
