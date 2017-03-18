@@ -83,7 +83,8 @@ var fn = {
 		  		/*
 		  		*transferimos la foto
 		  		*/
-		  		var fotoURL = fotoR.src;
+		  		//var fotoURL = fotoR.src;
+		  		var fotoURL = $(fotoR).attr("src");
 		  		file.transferir(fotoURL);
 		  	} else{
 		        alert( "Error al enviar datos de registro" + mensaje );
