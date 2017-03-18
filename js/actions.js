@@ -67,6 +67,7 @@ var fn = {
 
 	enviarRegistro: function(nombreR, emailR, telR, passwordR, fotoR){
 		alert("enviadnso datos");
+		alert("Nombre: "+nombreR+" Email: "+emailR+" Tel: "+telR+" password: "+passwordR);
 		$.ajax({
 		  method: "POST",
 		  url: "http://www.colors.edu.mx/archivoTest.php",
