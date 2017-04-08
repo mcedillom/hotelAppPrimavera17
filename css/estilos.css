@@ -1,3 +1,38 @@
 #fotoTomadaRegistro img {
 	width: 100%;
 }
+
+.informacion,
+.informacion th,
+.informacion td,
+.informacion tr {
+	font-size: 14px;
+	border:  1px solid black;
+	padding: 2px 3px;
+	text-align: center;
+	border-collapse: collapse;
+}
+.mapa iframe{
+	width: 100%;
+}
+
+#gallery img{
+	width: 100%;
+}
+
+.ui-popup-container,
+.ui-popup{
+	height: auto;
+	width: 90%;
+	position: absolute;
+	top: 30px !important;
+	left: 0;
+}
+.ui-popup-screen.in{
+	background: black;
+	opacity: 0.6 !important;
+}
+
+#popupFoto img{
+	width: 100%;
+}

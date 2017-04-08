@@ -5,211 +5,294 @@
 	<title>HotelApp</title>
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons-1.4.5.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.inline-png-1.4.5.min.css">
-
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-   <div id="registro" data-role="page">
-   		<div data-role="header">
-   			<h1>Registro</h1>
-   		</div>
-   		<div class="ui-content">
-   			<ul data-role="listview">
-              	<li>
-              		<input id="nombreRegistro" type="text" placeholder="Nombre">
-              	</li>
-
-              	<li>
-              		<input id="emailRegistro" type="email" placeholder="Email">
-              	</li>
-              	<li>
-   		<div data-role="footer" data-position="fixed">
-   			<div data-role="navbar">
-   				<ul>
-   					<li>
-   						<a href="#" id="botonRegistrar" class="ui-btn-active">Registrar</a>
-   					</li>
-   					<li>
-   						<a href="#inicioSesion">Iniciar Sesion</a>
-   					</li>	
-   				</ul>
-   				<li>
-              		<input id="passwordRegistro" type="password" placeholder="Contraseña">
-              	</li>
-              	<li>
-              		<input id="telefonoRegistro" type="tel" placeholder="Teléfono">
-              	</li>
-                <li>
-                    <a id="botonTomarFoto" href="#">Tomar Foto </a>
-                </li>
-                <li id="fotoTomadaRegistro">
-
-                </li>
-   			</ul>
-   		</div>
-   			</div>
-   		</div>
-   </div>
-   
-   <div id="inicioSesion" data-role="page">
-   	   <div data-role="header">
-   	   		Inicio Sesion
-   	   </div>
-   	   <div class="ui-content">
-   	   		<ul data-role="listview">
-   	   			<li data-role="list-divider">
-   	   				Correo Usuario
-   	   			</li>
-   	   			<li>
-   	   				<input id="emailSesion" type="email" placeholder="email">
-   	   			</li>
-   	   			<li data-role="list-divider">
-   	   				Contraseña
-   	   			</li>
-   	   			<li>
-   	   				<input id="passwordSesion" type="password" placeholder="Conraseña">
-   	   			</li>
-   	   		</ul>
-   	   </div>
-   	   <div data-role="footer" data-position="fixed">
-   	   		<div data-role="navbar">
-   	   			<ul>
-   	   				<li>
-   	   					<a id="botonIniciarSesion" href="#" class="ui-btn-active">Iniciar Sesión</a>
-   	   				</li>
-   	   			</ul>
-   	   		</div>
-   	   </div>
-   </div>
-   
-   <div id="home" data-role="page">
-   		<div data-role="header">
-   			<h1>HotelApp</h1>
-   			<a href="#" class="fecha">
-   				04/03/2017
-   			</a>
-   			<a href="#" id="botonCerrarSesion" data-role="button" data-icon="delete">
-   				Cerrar Sesión
-   			</a>
-   		</div>
-   		<div class="ui-content">
-   			<ul data-role="listview">
-	   			<li>
-	   				<a href="#reserva1">
-	   				   Nueva Reserva
-	   				</a>
-	   			</li>
-	   			<li>
-	   				<a href="#historial">
-	   					Historial de Reservas
-	   				</a>	
-	   			</li>
-	   			<li>
-	   				<a href="#reservasPendientes">
-	   					Reservas Pendientes
-	   				</a>	
-	   			</li>
-	   			<li>
-	   				<a href="#ubicacion">
-	   					Ubicación
-	   				</a>	
-	   			</li>
-	   			<li>
-	   				<a href="#galeria">
-	   					Galeria
-	   				</a>	
-	   			</li>
-	   			<li>
-	   				<a href="#terminos">
-	   					Términos y Condiciones
-	   				</a>	
-	   			</li>
-   			</ul>
-   		</div>
-   		<div data-role="footer" data-position="fixed">
-   			<span>Todos los derechos reservados &copy;</span>
-   			<a href="#nosotros">Nosotros</a>
-   		</div>
-   </div>
-   <div id="reserva1" data-role="page">
-   		<div data-role="header">
-   			<h1>Reservación<h1>
-   		</div>
-   		<div class ="ui-content">
-   			<lu data-role ="listview">
-	   			<li data-role="listview">
-	   				Selecciona el tipo de habitación
-	   			</li>
-	   			<li><a href="#">Sencilla</a></li>
-	   			<li><a href="#">Doble</a></li>
-	   			<li><a href="#">Suite</a></li>
-	   		</lu>	
-   		</div>
-   		<div data-role="footer" data-position="fixed">
-   			<div data-role="navbar">
-	   			<ul>
-	   				<li><a href="#" data-rel="back">Cancelar</a></li>
-	   				<li><a href="#" class="ui-btn-active">Siguiente</a></li>
-	   			</ul>
-   			</div>
-   		</div>	
-   </div>
-   <div id="reserva2" data-role="page">
-   		<div data-role="header">
-   			<h1>Reservación</h1>
-   			<a href="#" data-rel="back">Atrás</a>
-   		</div>
-   		<div class="ui-content">
-   			<ul data-role="listview">
-   				<li data-role="list-divider">
-   					Selecciona datos extras
-   				</li>
-   				<li>
-   					Número de Personas:
-   					<select>
-   						<option>1</option>
-   						<option>2</option>
-   						<option>3</option>
-   						<option>4</option>					
-   					</select>
-   				</li>
-   				<li>
-   					Número de Días:
-   					<select>
-   						<option>1</option>
-   						<option>2</option>
-   						<option>3</option>
-   						<option>4</option>
-   					</select>
-   				</li>
-   				<li>
-   					Número de Habictaciones:
-   					<select>
-   						<option>1</option>
-   						<option>2</option>
-   						<option>3</option>
-   						<option>4</option>
-   					</select>
-   				</li>
-   			</ul>
-   		</div>
-   		<div data-role="footer" data-position="fixed">
-   			<div data-role="navbar">
-   				<ul>
-   					<li><a href="#" class="ui-btn-active">Reservar</a></li>
-   				</ul>
-   			</div>
-   		</div>
-   </div>
+	<div id="registro" data-role="page">
+		<div data-role="header">
+			<h1>Registro</h1>
+		</div>
+		<div class="ui-content">
+			<ul data-role="listview">
+				<li>
+					<input id="nombreRegistro" type="text" placeholder="Nombre">
+				</li>
+				<li>
+					<input id="emailRegistro" type="email" placeholder="Email">
+				</li>
+				<li>
+					<input id="passwordRegistro" type="password" placeholder="Contraseña">
+				</li>
+				<li>
+					<input id="telefonoRegistro" type="tel" placeholder="Teléfono">
+				</li>
+				<li>
+					<a id="botonTomarFoto" href="#">Tomar Foto</a>
+				</li>
+				<li id="fotoTomadaRegistro">
+					
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<a href="#" id="botonRegistrar" class="ui-btn-active">
+							Registrar
+						</a>
+					</li>
+					<li>
+						<a href="#inicioSesion">
+							Iniciar Sesión
+						</a>
+					</li> 	
+				</ul>
+			</div>
+		</div>
+	</div>
 
 
-   <script type="text/javascript" src="cordova.js"></script>
-   <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-   <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-   <script type="text/javascript" src="js/API/mediaCapture.js"></script>
-    <script type="text/javascript" src="js/API/fileTransfer.js"></script>
-   <script type="text/javascript" src="js/actions.js"></script>
+	<div id="inicioSesion" data-role="page">
+		<div data-role="header">
+			<h1>Iniciar Sesión</h1>
+		</div>
+		<div class="ui-content">
+			<ul data-role="listview">
+				<li data-role="list-divider">
+					Correo de usuario
+				</li>
+				<li>
+					<input id="emailSesion" type="email" placeholder="Email">
+				</li>
+				<li data-role="list-divider">
+					Contraseña
+				</li>
+				<li>
+					<input id="passwordSesion" type="password" placeholder="Contraseña">
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<a id="botonIniciarSesion" href="#" class="ui-btn-active">
+							Iniciar Sesión
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
+	<div id="home" data-role="page">
+		<div data-role="header">
+			<h1>HotelApp</h1>
+			<a href="#" class="fecha">
+				
+			</a>
+			<a href="#" id="botonCerrarSesion" data-role="button" data-icon="delete">
+				Cerrar Sesión
+			</a>
+		</div>
+		<div class="ui-content">
+			<ul data-role="listview">
+				<li>
+					<a href="#reserva1">
+						Nueva Reserva
+					</a>
+				</li>
+				<li>
+					<a href="#historial" id="botonHistorial">
+						Historial de Reservas
+					</a>
+				</li>
+				<li>
+					<a href="#reservasPendientes" id="botonReservasPendientes">
+						Reservas Pendientes
+					</a>
+				</li>
+				<li>
+					<a href="#ubicacion">
+						Ubicación
+					</a>
+				</li>
+				<li>
+					<a href="#galeria" id="botonGaleria">
+						Galería
+					</a>
+				</li>
+				<li>
+					<a href="#terminos">
+						Términos y Condiciones
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<span>&copy; 2017. Todos los derechos reservados Ismael Haro</span>
+			<a href="#nosotros">Nosotros</a>
+		</div>
+	</div>
+
+
+	<div id="reserva1" data-role="page">
+		<div data-role="header">
+			<h1>Reservación</h1>
+		</div>
+		<div class="ui-content">
+			<ul data-role="listview">
+				<li data-role="list-divider">
+					Selecciona el tipo de habitación
+				</li>
+				<li><a class="tipoHabitacion" href="#">Sencilla</a></li>
+				<li><a class="tipoHabitacion" href="#">Doble</a></li>
+				<li><a class="tipoHabitacion" href="#">Suite</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-rel="back">Cancelar</a></li>
+					<li><a href="#" class="siguiente ui-btn-active">Siguiente</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="reserva2" data-role="page">
+		<div data-role="header">
+			<h1>Reservación</h1>
+			<a href="#" data-rel="back">
+				Atrás
+			</a>
+		</div>
+		<div class="ui-content">
+			<ul data-role="listview">
+				<li data-role="list-divider">
+					Selecciona datos extras
+				</li>
+				<li>
+					Número de personas:
+					<select class="numPersonas">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</li>
+				<li>
+					Número de días:
+					<select class="numDias">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</li>
+				<li>
+					Número de habitaciones:
+					<select class="numHabitaciones">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="reservar ui-btn-active">Reservar</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	
+	<div id="historial" data-role="page">
+		<div data-role="header">
+			<h1>Historial</h1>
+			<a href="#" data-rel="back">Atrás</a>
+		</div>
+		<div class="ui-content">
+			<table class="informacion">
+				<thead>
+					<tr>
+						<th>Tipo de habitación</th>
+						<th>Número de personas</th>
+						<th>Número de habitaciones</th>
+						<th>Numero de días</th>
+					</tr>
+				</thead>
+				<tbody id="listaHistorial">
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	
+	<div id="reservasPendientes" data-role="page">
+		<div data-role="header">
+			<h1>Reservas Pendientes</h1>
+			<a href="#" data-rel="back">Atrás</a>
+		</div>
+		<div class="ui-content">
+			<table class="informacion">
+				<thead>
+					<tr>
+						<th>Tipo de habitación</th>
+						<th>Número de personas</th>
+						<th>Número de habitaciones</th>
+						<th>Numero de días</th>
+					</tr>
+				</thead>
+				<tbody id="listaReservasPendientes">
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div id="ubicacion" data-role="page">
+		<div data-role="header">
+			<h1>Ubicación</h1>
+			<a href="#" data-rel="back">Atrás</a>
+		</div>
+		<div class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2346517774026!2d-98.22435168531935!3d19.053417987100893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6d546f78207%3A0x7cf7d62d0ff646b0!2sWork+%26+Travel+Mexico!5e0!3m2!1ses-419!2smx!4v1491663287753" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div id="galeria" data-role="page">
+		<div data-role="header">
+			<h1>Galería</h1>
+			<a href="#" data-rel="back">Atrás</a>
+		</div>
+		<div class="ui-content">
+			<div id="gallery" class="ui-grid-a">
+				
+			</div>
+		</div>
+		<div id="popupGaleria" data-role="popup"> 
+			<a href="#" data-rel="back">Cerrar</a>
+			<div id="popupFoto" class="iu-content">
+				<img src="">
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/API/mediaCapture.js"></script>
+	<script type="text/javascript" src="js/API/fileTransfer.js"></script>
+	<script type="text/javascript" src="js/API/netwokInformation.js"></script>
+	<script type="text/javascript" src="js/almacen.js"></script>
+	<script type="text/javascript" src="js/actions.js"></script>
 </body>
 </html>
