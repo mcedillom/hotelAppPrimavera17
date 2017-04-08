@@ -24,6 +24,7 @@
         <splash src="img/splash.png" />
 
         <gap:plugin name = "cordova-plugin-whitelist" source="npm"/>
+        <gap:plugin name = "cordova-plugin-splashscreen" source="npm"/>
         <gap:plugin name="org.apache.cordova.media-capture"  source ="npm"/>
         <gap:plugin name="org.apache.cordova.file-transfer" source ="npm"/>
         <gap:plugin name="org.apache.cordova.network-information" source ="npm"/>
